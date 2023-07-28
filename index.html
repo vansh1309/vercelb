@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Chatbot</title>
+</head>
+<body>
+    <h1>Football Chatbot</h1>
+    <div>
+        <label for="question">Ask a football-related question:</label>
+        <input type="text" id="question" placeholder="Enter your question here...">
+        <button onclick="getAnswer()">Submit</button>
+    </div>
+    <div>
+        <h2>Answer:</h2>
+        <p id="answer">Waiting for a question...</p>
+    </div>
+
+    <script>
+        function getAnswer() {
+            const question = document.getElementById("question").value;
+            const url = "https://vercelgptnew.vercel.app//chatbot"; // Replace with your Vercel app URL
+
+            fetch(url, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ "question": question })
+            })
+            .then(response => response.json())
+            .then(data => {
+                const answer = data.answer || "Sorry, no answer found.";
+                document.getElementById("answer").innerText = answer;
+            })
+            .catch(error => {
+                console.error("Error fetching data:", error);
+            });
+        }
+    </script>
+</body>
+</html>

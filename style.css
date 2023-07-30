@@ -30,6 +30,7 @@ h1,h2 {
 /* Style the chatbot input and button section */
 input[type="text"] {
   width: 30%;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;

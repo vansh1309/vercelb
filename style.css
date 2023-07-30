@@ -35,8 +35,7 @@ input[type="text"] {
   margin-right: auto;
   margin-bottom: 10px;
   padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 3px;
+
 }
 
 button {
@@ -53,6 +52,7 @@ button {
 /* Style the chatbot answer section */
 #answer {
   width: 30%;
+  height:50%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;

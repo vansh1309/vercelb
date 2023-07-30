@@ -18,6 +18,8 @@ h1,h2 {
 
 /* Style the container for the chatbot section */
 .container {
+  margin-left: auto;
+  margin-right: auto;
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
@@ -38,6 +40,8 @@ input[type="text"] {
 }
 
 button {
+  margin-left: auto;
+  margin-right: auto;
   background-color: #007bff;
   color: #fff;
   border: none;

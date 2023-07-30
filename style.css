@@ -28,7 +28,7 @@ h1,h2 {
 
 /* Style the chatbot input and button section */
 input[type="text"] {
-  width: 100%;
+  width: 30%;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ddd;
@@ -46,6 +46,7 @@ button {
 
 /* Style the chatbot answer section */
 #answer {
+  width: 30%;
   margin-top: 20px;
   padding: 10px;
   border: 1px solid #ddd;
